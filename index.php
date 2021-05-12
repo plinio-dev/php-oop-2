@@ -42,11 +42,19 @@ class Lavatrice extends Prodotto {
 
 }
 
-$smartphone_1 = new Smartphone("Iphone", "600€", "Apple", "Green");
-$smartphone_2 = new Smartphone("Samsung A100", "580€", "Samsung", "Black");
-$lavatrice_1 = new Lavatrice("Candy cs4", "299€", "5kg", "1000");
-$lavatrice_2 = new Lavatrice("Lg F2W", "400€", "10kg", "1200")
+$smartphone_1 = new Smartphone("Iphone", "600", "Apple", "Green");
+$smartphone_2 = new Smartphone("Samsung A100", "580", "Samsung", "Black");
+$lavatrice_1 = new Lavatrice("Candy cs4", "299", "5kg", "1000 RPM");
+$lavatrice_2 = new Lavatrice("Lg F2W", "400", "10kg", "1200 RPM");
 
+$smartphone = [
+   $smartphone_1,
+   $smartphone_2,
+];
+$lavatrici = [
+   $lavatrice_1,
+   $lavatrice_2 
+];
 
 ?>
 
@@ -61,6 +69,19 @@ $lavatrice_2 = new Lavatrice("Lg F2W", "400€", "10kg", "1200")
 </head>
 <body>
    <h1>Prodotti</h1>
+   <?php foreach ($smartphone as $key => $prodotto) { ?>
+      <h2><?php echo $prodotto->nome ?></h2>
+      <span><?php echo $prodotto->prezzo ?>€</span>
+      <span><?php echo $prodotto->marca ?></span>
+      <span><?php echo $prodotto->colore ?></span>
+   <?php } ?>
+   <?php foreach ($lavatrici as $key => $prodotto) { ?>
+      <h2><?php echo $prodotto->nome ?></h2>
+      <span><?php echo $prodotto->prezzo ?>€</span>
+      <span><?php echo $prodotto->caricoMax ?></span>
+      <span><?php echo $prodotto->giri ?></span>
+   <?php } ?>
+
 
 </body>
 </html>

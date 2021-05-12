@@ -42,10 +42,10 @@ class Lavatrice extends Prodotto {
 
 }
 
-$smartphone_1 = new Prodotto("Iphone", "600€", "Apple", "Green");
-$smartphone_2 = new Prodotto("Samsung A100", "580€", "Samsung", "Black");
-$lavatrice_1 = new Prodotto("Candy cs4", "299€", "5kg", "1000");
-$lavatrice_2 = new Prodotto("Lg F2W", "400€", "10kg", "1200")
+$smartphone_1 = new Smartphone("Iphone", "600€", "Apple", "Green");
+$smartphone_2 = new Smartphone("Samsung A100", "580€", "Samsung", "Black");
+$lavatrice_1 = new Lavatrice("Candy cs4", "299€", "5kg", "1000");
+$lavatrice_2 = new Lavatrice("Lg F2W", "400€", "10kg", "1200")
 
 
 ?>

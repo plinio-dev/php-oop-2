@@ -33,15 +33,19 @@ class Lavatrice extends Prodotto {
    public $caricoMax;
    public $giri;
 
-   public function __construct(string $_nome, int $_prezzo, string $_caricoMax, string $_giri, )
+   public function __construct(string $_nome, int $_prezzo, string $_caricoMax, string $_giri)
 	{
       parent::__construct($_nome, $_prezzo);
-		$this->caricoMax = $_caricoMax;
+		$this->caricoMax = $_caricoMax;  
 		$this->giri = $_giri;
 	}
 
 }
 
+$smartphone_1 = new Prodotto("Iphone", "600€", "Apple", "Green");
+$smartphone_2 = new Prodotto("Samsung A100", "580€", "Samsung", "Black");
+$lavatrice_1 = new Prodotto("Candy cs4", "299€", "5kg", "1000");
+$lavatrice_2 = new Prodotto("Lg F2W", "400€", "10kg", "1200")
 
 
 ?>
@@ -57,6 +61,7 @@ class Lavatrice extends Prodotto {
 </head>
 <body>
    <h1>Prodotti</h1>
+
 </body>
 </html>
 
